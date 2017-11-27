@@ -160,6 +160,9 @@ if __name__ == "__main__":
     metrics = [
         'kafka.server:*',
         'kafka.controller:*',
+        'kafka.producer:*',
+        'kafka.consumer:*',
+        'kafka.network:type=RequestChannel,name=RequestQueueSize',
         'kafka.network:type=RequestMetrics,name=RequestsPerSec,request=Produce',
         'kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchConsumer',
         'kafka.network:type=RequestMetrics,name=RequestsPerSec,request=FetchFollower',
